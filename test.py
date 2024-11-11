@@ -23,4 +23,5 @@ async def main():
             attempts += 1
 
 if __name__ == "__main__":
+    # Obligatory test run
     skd.run()

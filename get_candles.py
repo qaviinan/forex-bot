@@ -3,7 +3,6 @@ import pandas as pd
 import sys
 import time
 import random
-import asyncio
 import datetime
 from termcolor import colored
 from quotexpy import Quotex
@@ -15,7 +14,7 @@ from aioskd import Scheduler
 
 skd = Scheduler()
 asset_current = "USDBDT"
-
+sigma_var = True
 
 def on_pin_code() -> str:
     code = input("Enter the code sent to your email: ")
